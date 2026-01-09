@@ -98,9 +98,8 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-lg font-bold text-[#0E2034] leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
-                {SITE_CONFIG.shortName}
+                {SITE_CONFIG.name}
               </h1>
-              <span className="text-xs text-[#7F8588] uppercase tracking-wider">Public School</span>
             </div>
           </Link>
 
