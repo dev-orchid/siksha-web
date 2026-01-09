@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export default function VisitPage() {
   const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ export default function VisitPage() {
             <div>
               <h2 className="text-3xl mb-6">Visit Our Campus</h2>
               <p className="text-[#4a4a4a] mb-6">
-                We invite you to visit Manas International Public School and experience our vibrant
+                We invite you to visit {SITE_CONFIG.name} and experience our vibrant
                 learning environment firsthand. During your visit, you&apos;ll have the opportunity to:
               </p>
               <ul className="space-y-4 mb-8">
@@ -204,7 +205,7 @@ export default function VisitPage() {
             <div className="bg-white p-6 rounded-lg shadow">
               <h3 className="text-xl mb-4">Our Address</h3>
               <p className="text-[#4a4a4a] mb-4">
-                <strong>Manas International Public School</strong><br />
+                <strong>{SITE_CONFIG.name}</strong><br />
                 Dakshini, P.O- Dharampur,<br />
                 Dist - Jehanabad (Bihar)-804417
               </p>

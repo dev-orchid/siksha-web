@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Fee Structure - Manas International Public School',
-  description: 'View the complete fee structure for all classes at Manas International Public School.',
+  title: 'Fee Structure - {SITE_CONFIG.name}',
+  description: 'View the complete fee structure for all classes at {SITE_CONFIG.name}.',
 };
 
 export default function FeesPage() {

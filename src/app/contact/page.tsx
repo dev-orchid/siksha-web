@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -52,7 +53,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold mb-1">Address</h3>
                     <p className="text-[#4a4a4a]">
-                      Manas International Public School<br />
+                      {SITE_CONFIG.name}<br />
                       Dakshini, P.O- Dharampur,<br />
                       Dist - Jehanabad (Bihar)-804417
                     </p>
@@ -218,7 +219,7 @@ export default function ContactPage() {
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                 </svg>
                 <p className="text-gray-500">
-                  <strong>Manas International Public School</strong><br />
+                  <strong>{SITE_CONFIG.name}</strong><br />
                   Dakshini, P.O- Dharampur,<br />
                   Dist - Jehanabad (Bihar)-804417
                 </p>

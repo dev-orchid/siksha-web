@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Campus Tour - Manas International Public School',
-  description: 'Explore the world-class campus and facilities at Manas International Public School.',
+  title: 'Campus Tour - {SITE_CONFIG.name}',
+  description: 'Explore the world-class campus and facilities at {SITE_CONFIG.name}.',
 };
 export default function CampusPage() {
   const facilities = [

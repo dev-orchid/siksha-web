@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Careers - Manas International Public School',
-  description: 'Explore career opportunities and join the Manas International Public School team.',
+  title: `Careers - ${SITE_CONFIG.name}`,
+  description: `Explore career opportunities and join the ${SITE_CONFIG.name} team.`,
 };
 
 export default function CareersPage() {

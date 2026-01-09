@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Clubs & Activities - Manas International Public School',
-  description: 'Explore student clubs and activities at Manas International Public School.',
+  title: 'Clubs & Activities - {SITE_CONFIG.name}',
+  description: 'Explore student clubs and activities at {SITE_CONFIG.name}.',
 };
 
 export default function ClubsPage() {

@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'School Calendar - Manas International Public School',
-  description: 'View the academic calendar, events, and important dates at Manas International Public School.',
+  title: `School Calendar - ${SITE_CONFIG.name}`,
+  description: `View the academic calendar, events, and important dates at ${SITE_CONFIG.name}.`,
 };
 
 export default function CalendarPage() {

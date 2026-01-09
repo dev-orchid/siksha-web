@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Mission & Vision - Manas International Public School',
-  description: 'Discover the mission, vision and core values that guide Manas International Public School.',
+  title: 'Mission & Vision - {SITE_CONFIG.name}',
+  description: 'Discover the mission, vision and core values that guide {SITE_CONFIG.name}.',
 };
 
 export default function MissionPage() {

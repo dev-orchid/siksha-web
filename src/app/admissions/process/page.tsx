@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Admission Process - Manas International Public School',
-  description: 'Learn about the step-by-step admission process at Manas International Public School.',
+  title: 'Admission Process - {SITE_CONFIG.name}',
+  description: 'Learn about the step-by-step admission process at {SITE_CONFIG.name}.',
 };
 
 export default function ProcessPage() {

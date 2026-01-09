@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Academics - Manas International Public School',
-  description: 'Explore our comprehensive CBSE curriculum and academic programs at Manas International Public School.',
+  title: `Academics - ${SITE_CONFIG.name}`,
+  description: `Explore our comprehensive CBSE curriculum and academic programs at ${SITE_CONFIG.name}.`,
 };
 
 export default function AcademicsPage() {
@@ -27,7 +28,7 @@ export default function AcademicsPage() {
             <div>
               <h2 className="text-3xl mb-6">Academic Excellence</h2>
               <p className="text-[#4a4a4a] mb-4">
-                At Manas International Public School, we follow the CBSE (Central Board of Secondary Education)
+                At {SITE_CONFIG.name}, we follow the CBSE (Central Board of Secondary Education)
                 curriculum, which is recognized for its comprehensive approach to education. Our academic
                 program is designed to develop critical thinking, creativity, and a love for learning.
               </p>

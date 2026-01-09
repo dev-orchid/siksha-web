@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Admissions - Manas International Public School',
-  description: 'Learn about the admission process, fees, and how to apply to Manas International Public School.',
+  title: `Admissions - ${SITE_CONFIG.name}`,
+  description: `Learn about the admission process, fees, and how to apply to ${SITE_CONFIG.name}.`,
 };
 
 export default function AdmissionsPage() {
@@ -17,7 +18,7 @@ export default function AdmissionsPage() {
           <span>Admissions</span>
         </div>
         <h1>Admissions</h1>
-        <p>Begin your journey with Manas International Public School</p>
+        <p>Begin your journey with {SITE_CONFIG.name}</p>
       </section>
 
       {/* Welcome Section */}
@@ -27,7 +28,7 @@ export default function AdmissionsPage() {
             <div>
               <h2 className="text-3xl mb-6">Welcome to Admissions</h2>
               <p className="text-[#4a4a4a] mb-4">
-                Thank you for considering Manas International Public School for your child&apos;s education.
+                Thank you for considering {SITE_CONFIG.name} for your child&apos;s education.
                 We are committed to providing a nurturing environment where every student can thrive
                 academically, socially, and emotionally.
               </p>

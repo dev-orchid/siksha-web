@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Sports - Manas International Public School',
-  description: 'Explore our comprehensive sports program at Manas International Public School.',
+  title: 'Sports - {SITE_CONFIG.name}',
+  description: 'Explore our comprehensive sports program at {SITE_CONFIG.name}.',
 };
 
 export default function SportsPage() {

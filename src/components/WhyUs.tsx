@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 const features = [
   {
@@ -45,7 +46,7 @@ const WhyUs = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl mb-5">Why Choose Manas International Public School?</h2>
+            <h2 className="text-3xl md:text-4xl mb-5">Why Choose {SITE_CONFIG.name}?</h2>
             <p className="text-lg text-[#4a4a4a] mb-10">
               We believe in nurturing the complete individual - academically, physically, emotionally, and socially.
             </p>
@@ -68,7 +69,7 @@ const WhyUs = () => {
           <div className="relative">
             <Image
               src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800"
-              alt="Students at Manas International Public School"
+              alt={`Students at ${SITE_CONFIG.name}`}
               width={600}
               height={500}
               className="rounded-lg shadow-xl"

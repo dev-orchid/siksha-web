@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Parent Portal - Manas International Public School',
+  title: `Parent Portal - ${SITE_CONFIG.name}`,
   description: 'Access the parent portal for student information, grades, and school communications.',
 };
 

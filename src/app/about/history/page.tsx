@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Our History - Manas International Public School',
-  description: 'Explore the rich history and journey of Manas International Public School.',
+  title: 'Our History - {SITE_CONFIG.name}',
+  description: 'Explore the rich history and journey of {SITE_CONFIG.name}.',
 };
 
 export default function HistoryPage() {
@@ -11,7 +12,7 @@ export default function HistoryPage() {
     {
       year: '1999',
       title: 'Foundation',
-      description: 'Manas International Public School was founded with a vision to provide quality education in Jehanabad district.',
+      description: '{SITE_CONFIG.name} was founded with a vision to provide quality education in Jehanabad district.',
     },
     {
       year: '2005',
@@ -62,7 +63,7 @@ export default function HistoryPage() {
             <div>
               <h2 className="text-3xl mb-6">Our Story</h2>
               <p className="text-[#4a4a4a] mb-4">
-                Manas International Public School began its journey in 1999 with a simple yet powerful vision:
+                {SITE_CONFIG.name} began its journey in 1999 with a simple yet powerful vision:
                 to provide quality education that transforms lives. Founded by a group of passionate educators
                 and visionaries, the school started with just a handful of students and a dream.
               </p>

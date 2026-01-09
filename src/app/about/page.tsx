@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'About Us - Manas International Public School',
-  description: 'Learn about Manas International Public School - our mission, vision, history, and commitment to excellence in education.',
+  title: `About Us - ${SITE_CONFIG.name}`,
+  description: `Learn about ${SITE_CONFIG.name} - our mission, vision, history, and commitment to excellence in education.`,
 };
 
 export default function AboutPage() {
@@ -17,7 +18,7 @@ export default function AboutPage() {
           <span>About Us</span>
         </div>
         <h1>About Us</h1>
-        <p>Discover the story behind Manas International Public School</p>
+        <p>Discover the story behind {SITE_CONFIG.name}</p>
       </section>
 
       {/* Introduction */}
@@ -25,9 +26,9 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl mb-6">Welcome to Manas International Public School</h2>
+              <h2 className="text-3xl mb-6">Welcome to {SITE_CONFIG.name}</h2>
               <p className="text-[#4a4a4a] mb-4">
-                Manas International Public School, located in the serene environs of Dharampur, Jehanabad, Bihar,
+                {SITE_CONFIG.name}, located in the serene environs of Dharampur, Jehanabad, Bihar,
                 stands as a beacon of quality education in the region. Since our establishment, we have been
                 committed to providing holistic education that nurtures young minds and prepares them for the
                 challenges of tomorrow.

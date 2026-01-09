@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Arts & Culture - Manas International Public School',
-  description: 'Explore our arts and cultural programs at Manas International Public School.',
+  title: 'Arts & Culture - {SITE_CONFIG.name}',
+  description: 'Explore our arts and cultural programs at {SITE_CONFIG.name}.',
 };
 
 export default function ArtsPage() {

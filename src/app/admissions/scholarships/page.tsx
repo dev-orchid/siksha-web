@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Scholarships - Manas International Public School',
-  description: 'Explore scholarship opportunities at Manas International Public School.',
+  title: 'Scholarships - {SITE_CONFIG.name}',
+  description: 'Explore scholarship opportunities at {SITE_CONFIG.name}.',
 };
 
 export default function ScholarshipsPage() {
@@ -65,7 +66,7 @@ export default function ScholarshipsPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl mb-6">Our Commitment to Access</h2>
           <p className="text-lg text-[#4a4a4a]">
-            At Manas International Public School, we believe that financial constraints should never
+            At {SITE_CONFIG.name}, we believe that financial constraints should never
             be a barrier to quality education. Our comprehensive scholarship and financial aid programs
             ensure that deserving students have the opportunity to learn and grow, regardless of their
             economic background.

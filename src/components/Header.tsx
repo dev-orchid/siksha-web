@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -97,7 +98,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-lg font-bold text-[#0E2034] leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Manas International
+                {SITE_CONFIG.shortName}
               </h1>
               <span className="text-xs text-[#7F8588] uppercase tracking-wider">Public School</span>
             </div>

@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Programs - Manas International Public School',
-  description: 'Explore co-curricular programs including sports, arts, clubs, and labs at Manas International Public School.',
+  title: `Programs - ${SITE_CONFIG.name}`,
+  description: `Explore co-curricular programs including sports, arts, clubs, and labs at ${SITE_CONFIG.name}.`,
 };
 
 export default function ProgramsPage() {
@@ -55,7 +56,7 @@ export default function ProgramsPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl mb-6">Holistic Development</h2>
           <p className="text-lg text-[#4a4a4a]">
-            At Manas International Public School, we believe that education extends beyond textbooks.
+            At {SITE_CONFIG.name}, we believe that education extends beyond textbooks.
             Our comprehensive co-curricular programs help students discover their passions, develop
             new skills, and grow into well-rounded individuals ready to take on the world.
           </p>

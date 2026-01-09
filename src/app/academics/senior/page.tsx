@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Senior Secondary - Manas International Public School',
-  description: 'Senior secondary education program (Class 9-12) at Manas International Public School.',
+  title: 'Senior Secondary - {SITE_CONFIG.name}',
+  description: 'Senior secondary education program (Class 9-12) at {SITE_CONFIG.name}.',
 };
 
 export default function SeniorPage() {

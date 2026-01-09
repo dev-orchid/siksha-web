@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Support Us - Manas International Public School',
-  description: 'Support the mission of Manas International Public School through donations and partnerships.',
+  title: `Support Us - ${SITE_CONFIG.name}`,
+  description: `Support the mission of ${SITE_CONFIG.name} through donations and partnerships.`,
 };
 
 export default function SupportPage() {
@@ -26,7 +27,7 @@ export default function SupportPage() {
             <div>
               <h2 className="text-3xl mb-6">Make a Difference</h2>
               <p className="text-[#4a4a4a] mb-4">
-                At Manas International Public School, we believe that quality education should be
+                At {SITE_CONFIG.name}, we believe that quality education should be
                 accessible to every child, regardless of their economic background. Your support
                 helps us provide scholarships, upgrade facilities, and enhance learning experiences
                 for our students.

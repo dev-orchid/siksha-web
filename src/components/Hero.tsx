@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-20 text-center max-w-4xl px-5">
         <p className="text-sm uppercase tracking-[4px] text-[#C4A35A] mb-5 animate-fade-in-up">
-          Welcome to Manas International Public School
+          Welcome to {SITE_CONFIG.name}
         </p>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight text-white" style={{ fontFamily: 'Playfair Display, serif' }}>
           Knowledge <em className="text-[#C4A35A] italic">and</em> Values

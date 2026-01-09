@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Leadership - Manas International Public School',
-  description: 'Meet the dedicated leadership team of Manas International Public School.',
+  title: 'Leadership - {SITE_CONFIG.name}',
+  description: 'Meet the dedicated leadership team of {SITE_CONFIG.name}.',
 };
 
 export default function LeadershipPage() {
@@ -100,7 +101,7 @@ export default function LeadershipPage() {
                 Dear Parents and Students,
               </p>
               <p className="text-[#4a4a4a] mb-4">
-                Welcome to Manas International Public School! As the Principal, I am honored to lead
+                Welcome to {SITE_CONFIG.name}! As the Principal, I am honored to lead
                 an institution that has been shaping young minds for over two decades. Our school
                 stands as a testament to the belief that quality education is the cornerstone of a
                 progressive society.

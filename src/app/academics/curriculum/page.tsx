@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Curriculum - Manas International Public School',
-  description: 'Learn about our CBSE curriculum and teaching methodology at Manas International Public School.',
+  title: 'Curriculum - {SITE_CONFIG.name}',
+  description: 'Learn about our CBSE curriculum and teaching methodology at {SITE_CONFIG.name}.',
 };
 
 export default function CurriculumPage() {
@@ -26,7 +27,7 @@ export default function CurriculumPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl mb-6 text-center">CBSE Curriculum</h2>
           <p className="text-lg text-[#4a4a4a] text-center mb-8">
-            Manas International Public School is affiliated with the Central Board of Secondary Education (CBSE),
+            {SITE_CONFIG.name} is affiliated with the Central Board of Secondary Education (CBSE),
             New Delhi. Our curriculum is designed to provide a strong foundation in academics while nurturing
             creativity, critical thinking, and life skills.
           </p>

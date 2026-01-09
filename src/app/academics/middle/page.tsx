@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Middle School - Manas International Public School',
-  description: 'Middle school education program (Class 6-8) at Manas International Public School.',
+  title: 'Middle School - {SITE_CONFIG.name}',
+  description: 'Middle school education program (Class 6-8) at {SITE_CONFIG.name}.',
 };
 
 export default function MiddlePage() {

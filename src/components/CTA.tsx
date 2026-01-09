@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 const CTA = () => {
   return (
@@ -8,7 +9,7 @@ const CTA = () => {
           Begin Your Journey With Us
         </h2>
         <p className="text-lg text-white/90 mb-10">
-          Admissions are now open for the academic year 2025-26. Join the Manas International Public School family
+          Admissions are now open for the academic year 2025-26. Join the {SITE_CONFIG.name} family
           and give your child the gift of quality education.
         </p>
         <div className="flex flex-col sm:flex-row gap-5 justify-center">

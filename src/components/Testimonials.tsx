@@ -2,10 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 const testimonials = [
   {
-    content: "Manas International Public School has been instrumental in shaping my child's future. The teachers are dedicated and the environment is nurturing. We couldn't have asked for a better school.",
+    content: `${SITE_CONFIG.name} has been instrumental in shaping my child's future. The teachers are dedicated and the environment is nurturing. We couldn't have asked for a better school.`,
     author: 'Priya Sharma',
     role: 'Parent of Grade 8 Student',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100',

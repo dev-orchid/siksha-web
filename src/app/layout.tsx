@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SITE_CONFIG } from "@/lib/constants/site";
 
 export const metadata: Metadata = {
-  title: "Manas International Public School - Excellence in Education",
-  description: "Manas International Public School, Jehanabad, Bihar - Providing quality education from Nursery to Grade 12 with CBSE curriculum. Building future leaders through knowledge and values.",
-  keywords: "Manas International Public School, MIPS, Jehanabad, Bihar, CBSE School, Best School in Jehanabad, Education, Primary School, Secondary School",
+  title: `${SITE_CONFIG.name} - Excellence in Education`,
+  description: `${SITE_CONFIG.name}, Jehanabad, Bihar - Providing quality education from Nursery to Grade 12 with CBSE curriculum. Building future leaders through knowledge and values.`,
+  keywords: `${SITE_CONFIG.name}, MIPS, Jehanabad, Bihar, CBSE School, Best School in Jehanabad, Education, Primary School, Secondary School`,
 };
 
 export default function RootLayout({

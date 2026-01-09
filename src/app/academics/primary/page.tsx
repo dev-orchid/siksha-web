@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Primary School - Manas International Public School',
-  description: 'Primary education program (Nursery to Class 5) at Manas International Public School.',
+  title: 'Primary School - {SITE_CONFIG.name}',
+  description: 'Primary education program (Nursery to Class 5) at {SITE_CONFIG.name}.',
 };
 
 export default function PrimaryPage() {

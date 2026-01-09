@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { SITE_CONFIG } from '@/lib/constants/site';
 
 export const metadata = {
-  title: 'Community - Manas International Public School',
-  description: 'Join our vibrant school community at Manas International Public School.',
+  title: `Community - ${SITE_CONFIG.name}`,
+  description: `Join our vibrant school community at ${SITE_CONFIG.name}.`,
 };
 
 export default function CommunityPage() {
@@ -27,7 +28,7 @@ export default function CommunityPage() {
             <div>
               <h2 className="text-3xl mb-6">The MIPS Family</h2>
               <p className="text-[#4a4a4a] mb-4">
-                At Manas International Public School, we believe that education is a collaborative
+                At {SITE_CONFIG.name}, we believe that education is a collaborative
                 effort. Our community includes students, parents, teachers, staff, and alumni who
                 all work together to create a nurturing and inspiring learning environment.
               </p>
