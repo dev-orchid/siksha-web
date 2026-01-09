@@ -5,7 +5,6 @@ export const metadata = {
   title: 'Campus Tour - Manas International Public School',
   description: 'Explore the world-class campus and facilities at Manas International Public School.',
 };
-
 export default function CampusPage() {
   const facilities = [
     {
